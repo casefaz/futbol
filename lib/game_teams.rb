@@ -36,9 +36,9 @@ class GameTeams
       shots = row[:shots]
       tackles = row[:tackles]
       pim = row[:pim]
-      power_play_opportunities = row[:power_play_opportunities]
-      power_play_goals = row[:power_play_goals]
-      face_off_win_percentage = row[:face_off_win_percentage]
+      power_play_opportunities = row[:powerplayopportunities]
+      power_play_goals = row[:powerplaygoals]
+      face_off_win_percentage = row[:faceoffwinpercentage]
       giveaways = row[:giveaways]
       takeaways = row[:takeaways]
       game_teams_data << GameTeams.new(game_id, team_id, hoa, result, settled_in, head_coach, goals,

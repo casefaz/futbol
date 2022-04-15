@@ -36,6 +36,11 @@ RSpec.describe StatTracker do
     #     })
     #   collections is the key with the data as the value so that
     # end
+    describe 'Game Statistics' do 
+      it 'highest_total_score' do
+        expect(@stat_tracker.highest_total_score).to eq(6)
+      end
+    end
     describe 'League Statistics' do
       it '#count_of_teams can count teams' do 
       expect(@stat_tracker.count_of_teams).to eq(32)
@@ -43,6 +48,7 @@ RSpec.describe StatTracker do
 
       it '#best_offense finds team with the best offense' do 
         expect(stat_tracker.best_offense).to eq()
+        #highest average number of goals for each game played
       end
     end
 

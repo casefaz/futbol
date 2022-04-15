@@ -23,10 +23,9 @@ class StatTracker
     StatTracker.new(locations)
   end
 
-  def highest_total_score(game_data)
-    sum = 0
+  def highest_total_score
     highest_sum = 0
-    game_data.each do |game|
+    @games.each do |game|
       sum = game.away_goals.to_i + game.home_goals.to_i
       #require 'pry'; binding.pry
       highest_sum = sum if sum > highest_sum
@@ -37,6 +36,10 @@ class StatTracker
   def count_of_teams
     require 'pry'; binding.pry
     @teams.count
+  end
+
+  def best_offense
+    #find all the rows with same id, add all the goals and divide by the number of games
   end
 
   end
